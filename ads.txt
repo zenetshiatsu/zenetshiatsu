@@ -1,0 +1,5 @@
+User-agent: AdsBot
+Disallow: /noAdsBot/
+
+User-agent: *
+Allow: /
