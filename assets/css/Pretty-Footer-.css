@@ -11,27 +11,6 @@ footer {
   color: #fff;
 }
 
-.footer-navigation h3 {
-  margin: 0;
-  font: normal 36px Cookie, cursive;
-  margin-bottom: 20px;
-  color: #fff;
-}
-
-.footer-navigation h3 a {
-  text-decoration: none;
-  color: #fff;
-}
-
-.footer-navigation h3 span {
-  color: #5383d3;
-}
-
-.footer-navigation p.links a {
-  color: #fff;
-  text-decoration: none;
-}
-
 .footer-navigation p.company-name {
   color: #8f9296;
   font-size: 14px;
@@ -75,22 +54,6 @@ span.new-line-span {
   font-weight: normal;
   font-size: 14px;
   line-height: 2;
-}
-
-.footer-about h4 {
-  display: block;
-  color: #fff;
-  font-size: 14px;
-  font-weight: bold;
-  margin-bottom: 20px;
-}
-
-.footer-about p {
-  line-height: 20px;
-  color: #92999f;
-  font-size: 13px;
-  font-weight: normal;
-  margin: 0;
 }
 
 div.social-links {
