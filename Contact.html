@@ -44,19 +44,30 @@ height="0" width="0" style="display: none;visibility: hidden;"></iframe></noscri
                     <p>Vous pouvez me contacter si vous avez des questions sur le déroulement des séances individuelles au cabinet de Marseille, à domicile, en EHPAD ou pour tout autre renseignement. Aucun diagnostique ne peut être posé par téléphone. (<a href="tel:+33664661107">06 64 66 11 07</a>) ou mail (<a href="mailto:<zenetshiatsu@gmail.com>">zenetshiatsu@gmail.com</a>)<br><br><br><a class="btn btn-primary text-center" role="button" href="SeancesTarifs.html">Réserver une séance</a></p>
                 </div>
             </div>
-        </section><div class="map-container" style="width: 100%;height: 450px;">
-  <iframe
-    width="100%"
-    height="100%"
-    style="border: 0;"
-    loading="lazy"
-    allowfullscreen
-    referrerpolicy="no-referrer-when-downgrade"
-    src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDNwh1PLK3bxQLoJ5U4reo7_QDhkDDpWqw&q=14+Boulevard+Baille,+13006+Marseille,+France">
-  </iframe>
+        </section>
+        <div class="map-container" style="width: 100%;height: 450px;"><div id="map" style="height: 400px;width: 100%;border-radius: 8px;"></div>
+<script src="config.js"></script>
+<script>
+  function loadGoogleMapsScript(callback) {
+    const script = document.createElement("script");
+    script.src = `https://maps.googleapis.com/maps/api/js?key=${GOOGLE_MAPS_API_KEY}&callback=${callback}`;
+    script.async = true;
+    document.head.appendChild(script);
+  }
+
+  function initMap() {
+    const location = { lat: 43.2875, lng: 5.3928 }; // Adresse à Marseille
+    const map = new google.maps.Map(document.getElementById("map"), {
+      zoom: 15,
+      center: location,
+    });
+    new google.maps.Marker({ position: location, map: map });
+  }
+
+  // Lance le chargement dynamique
+  loadGoogleMapsScript("initMap");
+</script>
 </div>
-
-
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -152,6 +163,7 @@ height="0" width="0" style="display: none;visibility: hidden;"></iframe></noscri
     <script src="assets/js/baguetteBox.min.js"></script>
     <script src="assets/js/vanilla-zoom.js"></script>
     <script src="assets/js/theme.js"></script>
+    <script src="assets/js/config.js"></script>
 </body>
 
 </html>
