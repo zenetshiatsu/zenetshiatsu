@@ -1,7 +1,4 @@
-User-agent: Googlebot
-Disallow: /nogooglebot/
-
 User-agent: *
 Allow: /
 
-Sitemap: https://www.zenetshiatsu.fr/sitemap
+Sitemap: https://www.zenetshiatsu.fr/sitemap.xml
