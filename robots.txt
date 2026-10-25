@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.zenetshiatsu.fr/sitemap.xml
+Sitemap: https://zenetshiatsu.fr/sitemap.xml
