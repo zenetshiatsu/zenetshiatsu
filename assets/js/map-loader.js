@@ -16,7 +16,7 @@ function loadGoogleMapsScript() {
 // Fonction globale attendue par Google Maps
 window.initMap = function () {
   const geocoder = new google.maps.Geocoder();
-  const address = "14 Boulevard Baille, 13006 Marseille, France";
+  const address = "97-99 rue Marengo, 13006 Marseille, France";
 
   geocoder.geocode({ address: address }, (results, status) => {
     if (status === "OK") {
